@@ -1,6 +1,17 @@
-- 깃허브 예제 소스 파일([링크](https://github.com/Baepeu/python_web_programming_django3))
+# LInk 
 
+- 깃허브 예제 소스 파일([링크](https://github.com/Baepeu/python_web_programming_django3))
 - 파이썬 웹 프로그래밍 책([링크](http://www.yes24.com/Product/Goods/69758579?OzSrank=1))
+
+
+
+# Project
+
+|             Chapter              |         content(.md)          |         project         |
+| :------------------------------: | :---------------------------: | :---------------------: |
+|        ch2. 장고 시작하기        | [go](./django_default/ch2.md) | [go](./django_default/) |
+| ch3. 튜토리얼 따라하기(설문조사) |     [go](./polls/ch3.md)      |     [go](./polls/)      |
+|                                  |                               |                         |
 
 
 
