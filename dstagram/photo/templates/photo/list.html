@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}- List{% endblock  %}
+
+{% block content %}
+  {% for post in photos %}
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 panel-default">
+        <p><img src="{{ post.photo.url }}" style="width:100%;"></p>
+        <button type="button" class="btn btn-xs btn-info">
+          {{ post.author.username }}</button>
+          <span><a href="{% url 'photo:photo_update' pk=post.id %}" class="btn btn-sm btn-primary">Update</a></span>
+          <span><a href="{% url 'photo:photo_delete' pk=post.id %}" class="btn btn-sm btn-danger">Delete</a></span>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <p class="text-end">
+          <a href="{% url 'photo:photo_detail' pk=post.id %}" class="btn btn-xs 
+          btn-success">댓글달기</a>
+        </p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  {% endfor %}
+{% endblock content %}
+
